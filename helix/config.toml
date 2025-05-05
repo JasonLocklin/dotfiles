@@ -1,0 +1,26 @@
+theme = "dark_high_contrast"
+
+[editor]
+line-number = "relative"
+mouse = true
+true-color = true
+bufferline = "always"
+clipboard-provider = "x-clip"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = false
+#after-delay.timout = 3600000 #10min in miliseconds
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+

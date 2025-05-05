@@ -1,0 +1,29 @@
+
+[[grammar]]
+name = "r"
+source = { git = "https://github.com/r-lib/tree-sitter-r", rev = "main" }
+
+
+[[language]]
+name = "markdown"
+file-types = ["md", "markdown", "txt"]
+text-width = 75
+soft-wrap.wrap-at-text-width = true
+
+
+[[language]]
+name = "r"
+scope = "source.r"
+injection-regex = "r"
+file-types = ["r", "R", "Rmd", "rmd"]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+grammar = "r"  # For tree-sitter support
+
+[language-server.r-language-server]
+command = "R"
+args = ["--slave", "-e", "languageserver::run()"]
+
+[[language.language-servers]]
+name = "r-language-server"
+

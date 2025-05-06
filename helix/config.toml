@@ -42,11 +42,11 @@ G = "goto_file_end"
 "%" = "match_brackets"
 V = ["select_mode", "extend_to_line_bounds"]
 C = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection", "insert_mode"]
-D = ["extend_to_line_end", "yank_main_selection_to_clipboard", "delete_selection"]
 
 # Clipboards over registers ye ye
 x = ["yank_main_selection_to_clipboard", "delete_selection"] # instead of select line
 d = "extend_to_line_bounds"
+D = "extend_to_line_end"  
 p = ["paste_clipboard_after", "collapse_selection"]
 P = ["paste_clipboard_before", "collapse_selection"]
 Y = ["extend_to_line_end", "yank_main_selection_to_clipboard", "collapse_selection"]
@@ -123,7 +123,7 @@ esc = ["collapse_selection", "normal_mode"]
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
 G = "goto_file_end"
-D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
+D = ["extend_to_line_bounds"] # To make this work like "d" as select line, and Dx to delete to end of line
 C = ["goto_line_start", "extend_to_line_bounds", "change_selection"]
 "%" = "match_brackets"
 S = "surround_add" # Basically 99% of what I use vim-surround for

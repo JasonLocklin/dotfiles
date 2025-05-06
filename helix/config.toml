@@ -32,7 +32,11 @@ C-j = "shrink_selection"
 C-k = "expand_selection"
 C-l = "select_next_sibling"
 
+
 # Muscle memory
+"R" = [":reload"]
+C-r = [":reload"]
+
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 0 = "goto_line_start"
@@ -100,6 +104,10 @@ k = "move_line_up"
 # W = ["move_next_long_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
 # g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"] }
 
+# Shortcuts to toggling things on/off
+[keys.normal.space.t]
+s = ":toggle soft-wrap.enable"
+
 [keys.normal.y]
 y = ["extend_to_line_bounds", "yank_main_selection_to_clipboard", "normal_mode", "collapse_selection"]
 j = ["select_mode", "extend_to_line_bounds", "extend_line_below", "yank_main_selection_to_clipboard", "collapse_selection", "normal_mode"]
@@ -114,6 +122,7 @@ g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to
 [keys.insert]
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "normal_mode"]
+C-r = [":reload"]
 
 [keys.select]
 # Muscle memory

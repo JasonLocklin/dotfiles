@@ -9,6 +9,7 @@ name = "markdown"
 file-types = ["md", "markdown", "txt"]
 text-width = 75
 soft-wrap.wrap-at-text-width = true
+language-servers = ["marksman", "harper-ls"]
 
 
 [[language]]
@@ -27,3 +28,6 @@ args = ["--slave", "-e", "languageserver::run()"]
 [[language.language-servers]]
 name = "r-language-server"
 
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]

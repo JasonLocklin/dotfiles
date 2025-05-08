@@ -1,0 +1,13 @@
+
+# Use .bash_aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# For running programs as local user
+export PATH=/home/jay/.local/bin:$PATH
+
+# For atuin
+. "$HOME/.atuin/bin/env"
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"

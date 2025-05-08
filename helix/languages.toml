@@ -9,6 +9,9 @@ name = "markdown"
 file-types = ["md", "markdown", "txt"]
 text-width = 75
 soft-wrap.wrap-at-text-width = true
+#formatter = {command = "prettierd", args = ["--parser", "markdown"] }
+formatter = {command = "dprint", args = ["fmt", "--stdin", "md"]}
+auto-format = true
 language-servers = ["marksman", "markdown-oxide", "harper-ls"]
 
 

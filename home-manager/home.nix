@@ -38,8 +38,9 @@
     # Packages to install
 
     pkgs.marksman # Markdown language server
-    pkgs.harper  # Harper language server
+    pkgs.harper  # Harper language server for spelling/grammar
     pkgs.markdown-oxide # PKIM
+    pkgs.dprint #  Markdown formatter
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

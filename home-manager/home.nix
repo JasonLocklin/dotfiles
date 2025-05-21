@@ -41,6 +41,14 @@
     pkgs.harper  # Harper language server for spelling/grammar
     pkgs.markdown-oxide # PKIM
     pkgs.dprint #  Markdown formatter
+    pkgs.helix # Helix text editor
+    #pkgs.evil-helix # alternative to Helix with vim keybindings
+    #pkgs.input-leap # Keyboard and mouse sharing.
+    pkgs.barrier # Use this temporarily as input-leap isn't building
+    #pkgs.lagrange #Gemini browser
+    #pkgs.lagrange-tui # Text mode
+    pkgs.offpunk # Offline browser
+    pkgs.atuin # shell history
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

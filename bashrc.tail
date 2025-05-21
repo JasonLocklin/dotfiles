@@ -11,3 +11,6 @@ export PATH=/home/jay/.local/bin:$PATH
 . "$HOME/.atuin/bin/env"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+
+export EDITOR='hx'
+export VISUAL='hx'

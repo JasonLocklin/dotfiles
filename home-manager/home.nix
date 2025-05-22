@@ -48,9 +48,13 @@
     #pkgs.lagrange #Gemini browser
     #pkgs.lagrange-tui # Text mode
     pkgs.offpunk # Offline browser
-    pkgs.atuin # shell history
+    #pkgs.atuin # shell history
+    #pkgs.alacritty # Doesn't launch 
+    #pkgs.niri
+    #pkgs.blesh
   ];
-
+  
+  
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {

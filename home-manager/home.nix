@@ -52,6 +52,7 @@
     #pkgs.alacritty # Doesn't launch 
     #pkgs.niri
     #pkgs.blesh
+    pkgs.signal-desktop
   ];
   
   

@@ -1,0 +1,7 @@
+inherits = "dark_high_contrast"
+"ui.background" = {}
+"ui.background.separator" = {}
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+"ui.linenr" = { fg = "white"}
+"ui.linenr.selected" = { fg = "orange",  modifiers = ["bold"] }
